@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-
 $primary-font:Space Mono,monospace;
 $primary-color:#c5e4e7;
 $secondary-color: #00494d;
 $text-cyan: #26c0ab;
 $primaryBtn: blue ;
+$input-color: #f4f4f4;
+
+
+
+*{
+  font-family:$primary-font;
+}
+
+
 
 body {
     background: $primary-color;
@@ -16,11 +24,65 @@ main{
   justify-content:center;
   
 }
+
+.primary-btn {
+  width:145px;
+  height: 45px;
+  background:$secondary-color;
+  border-color: $secondary-color;
+  border-radius:5px;
+  color:#ffff;
+  font-size:24px;
+  font-weight:600;
+
+   &:hover{
+     background:$text-cyan;
+     border-color:$text-cyan;
+     color:$secondary-color;
+   }
+
+}
+
+.btn6:hover{
+  background:$input-color;
+  border-color:$input-color;
+  color:$secondary-color;
+}
+
+.btn7{
+  margin-top:20px;
+  background:$text-cyan;
+  border-color:$text-cyan;
+  color:$secondary-color;
+  width:310px;
+  height:45px;
+  font-size:24px;
+  border-radius: 10px;
+  font-weight:600;
+}
+
+
+
+.input-label {
+  margin-bottom:5px;
+}
+
+
+.label {
+  margin-top:10px;
+}
+
+.grid-container{
+  padding-top:10px;
+  display:grid;
+  grid-template-columns: 150px 150px;
+  grid-gap:10px;
+
+}
  
 header {
     .logo {
-      margin-top:50px;
-      margin-bottom:50px;
+      margin:50px 0px 50px 110px;
       width:100px;
     }
 }
@@ -29,5 +91,14 @@ header {
 
   background:#ffff;
   padding:20px;
+  border-radius:10px;
+
+}
+
+.subb_main{
+  margin-top:20px;
+  background:$secondary-color;
+  padding:20px;
+  border-radius:10px;
 
 }
