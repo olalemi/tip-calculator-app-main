@@ -8,7 +8,26 @@ $text-cyan: #26c0ab;
 $primaryBtn: blue ;
 
 body {
-    background:#c5e4e7;
+    background: $primary-color;
   }
 
+main{
+  display:flex;
+  justify-content:center;
   
+}
+ 
+header {
+    .logo {
+      margin-top:50px;
+      margin-bottom:50px;
+      width:100px;
+    }
+}
+
+.sub-main{
+
+  background:#ffff;
+  padding:20px;
+
+}

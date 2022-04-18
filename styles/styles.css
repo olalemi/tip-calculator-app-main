@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
-
 body {
   background: #c5e4e7;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100px;
+}
+
+.sub-main {
+  background: #ffff;
+  padding: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
