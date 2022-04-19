@@ -5,7 +5,8 @@ $primary-color:#c5e4e7;
 $secondary-color: #00494d;
 $text-cyan: #26c0ab;
 $primaryBtn: blue ;
-$input-color: #f4f4f4;
+$input-color: rgb(243, 249, 250);
+$label-color:rgb(94, 122, 125);
 
 
 
@@ -53,7 +54,7 @@ main{
   margin-top:20px;
   background:$text-cyan;
   border-color:$text-cyan;
-  color:$secondary-color;
+  color: $label-color;
   width:310px;
   height:45px;
   font-size:24px;
@@ -61,10 +62,38 @@ main{
   font-weight:600;
 }
 
+input[type="text"]{
+  width:310px;
+  height: 45px;
+  margin-top: 10px;
+  background:$input-color;
+  border-color:$input-color;
+  border-radius: 5px;
+  
+  textarea {
 
+    background-color : #d1d1d1; 
+
+  }
+  
+}
 
 .input-label {
-  margin-bottom:5px;
+  color: $label-color;
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+
+
+
+.input-label2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600; 
+  &::placeholder{
+    color:$input-color;
+  }
 }
 
 
@@ -82,7 +111,7 @@ main{
  
 header {
     .logo {
-      margin:50px 0px 50px 110px;
+      margin:50px 0px 50px 150px;
       width:100px;
     }
 }
