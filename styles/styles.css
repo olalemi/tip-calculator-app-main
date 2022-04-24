@@ -25,12 +25,14 @@ main {
   color: #ffff;
   font-size: 24px;
   font-weight: 600;
+  border-style: none;
 }
 
 .primary-btn:hover {
   background: #26c0ab;
   border-color: #26c0ab;
   color: #00494d;
+  border-style: none;
 }
 
 .btn6:hover {
@@ -43,12 +45,13 @@ main {
   margin-top: 20px;
   background: #26c0ab;
   border-color: #26c0ab;
-  color: #5e7a7d;
+  color: #00494d;
   width: 310px;
-  height: 45px;
+  height: 50px;
   font-size: 24px;
   border-radius: 10px;
   font-weight: 600;
+  border-style: none;
 }
 
 input[type="text"] {
@@ -58,10 +61,7 @@ input[type="text"] {
   background: #f3f9fa;
   border-color: #f3f9fa;
   border-radius: 5px;
-}
-
-input[type="text"] textarea {
-  background-color: #d1d1d1;
+  border-style: none;
 }
 
 .input-label {
@@ -74,6 +74,7 @@ input[type="text"] textarea {
   color: #ffffff;
   font-size: 20px;
   font-weight: 600;
+  background: #00494d;
 }
 
 .input-label2::-webkit-input-placeholder {
@@ -106,20 +107,20 @@ input[type="text"] textarea {
 }
 
 header .logo {
-  margin: 50px 0px 50px 150px;
+  margin: 50px 0px 30px 130px;
   width: 100px;
 }
 
 .sub-main {
   background: #ffff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .subb_main {
   margin-top: 20px;
   background: #00494d;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
