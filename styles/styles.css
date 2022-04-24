@@ -64,6 +64,22 @@ input[type="text"] {
   border-style: none;
 }
 
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+input[type="text"]:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+input[type="text"]::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+input[type="text"]::placeholder {
+  font-size: 15px;
+}
+
 .input-label {
   color: #5e7a7d;
   font-size: 20px;
@@ -75,22 +91,6 @@ input[type="text"] {
   font-size: 20px;
   font-weight: 600;
   background: #00494d;
-}
-
-.input-label2::-webkit-input-placeholder {
-  color: #f3f9fa;
-}
-
-.input-label2:-ms-input-placeholder {
-  color: #f3f9fa;
-}
-
-.input-label2::-ms-input-placeholder {
-  color: #f3f9fa;
-}
-
-.input-label2::placeholder {
-  color: #f3f9fa;
 }
 
 .label {
