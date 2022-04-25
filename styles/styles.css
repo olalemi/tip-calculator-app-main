@@ -65,19 +65,31 @@ input[type="text"] {
 }
 
 input[type="text"]::-webkit-input-placeholder {
+  color: #26c0ab;
   font-size: 15px;
+  font-weight: 600;
 }
 
 input[type="text"]:-ms-input-placeholder {
+  color: #26c0ab;
   font-size: 15px;
+  font-weight: 600;
 }
 
 input[type="text"]::-ms-input-placeholder {
+  color: #26c0ab;
   font-size: 15px;
+  font-weight: 600;
 }
 
 input[type="text"]::placeholder {
+  color: #26c0ab;
   font-size: 15px;
+  font-weight: 600;
+}
+
+input#Tamount, input#Total {
+  background: #00494d;
 }
 
 .input-label {

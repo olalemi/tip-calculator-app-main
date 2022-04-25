@@ -75,8 +75,27 @@ input[type="text"] {
   border-style:none;
 
   &::placeholder {
-    
+    color:$text-cyan;
     font-size:15px;
+    font-weight: 600;
+    
+  }
+  
+}
+
+
+
+ 
+  
+
+
+
+
+input{
+  
+    &#Tamount,&#Total{
+    background:$secondary-color;
+    
     
   }
   
