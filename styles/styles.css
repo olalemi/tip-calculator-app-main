@@ -7,17 +7,8 @@ body {
   background: #c5e4e7;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .primary-btn {
-  width: 145px;
+  width: 146px;
   height: 45px;
   background: #00494d;
   border-color: #00494d;
@@ -41,17 +32,29 @@ main {
   color: #00494d;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .btn7 {
-  margin-top: 20px;
+  margin: 20px auto;
   background: #26c0ab;
-  border-color: #26c0ab;
   color: #00494d;
-  width: 310px;
+  width: 280px;
   height: 50px;
   font-size: 24px;
   border-radius: 10px;
   font-weight: 600;
   border-style: none;
+}
+
+.reset {
+  text-align: center;
 }
 
 input[type="text"] {
@@ -92,10 +95,41 @@ input#Tamount, input#Total {
   background: #00494d;
 }
 
+input[id="Total"] {
+  width: 280px;
+  height: 45px;
+  margin-top: 10px;
+  background: #f3f9fa;
+  border-color: #f3f9fa;
+  border-radius: 5px;
+  border-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .input-label {
   color: #5e7a7d;
   font-size: 20px;
   font-weight: 600;
+}
+
+.label {
+  margin-top: 20px;
+}
+
+.label2, .label1 {
+  margin-left: 35px;
+}
+
+.label1 {
+  padding-top: 40px;
 }
 
 .input-label2 {
@@ -103,10 +137,7 @@ input#Tamount, input#Total {
   font-size: 20px;
   font-weight: 600;
   background: #00494d;
-}
-
-.label {
-  margin-top: 10px;
+  text-align: left;
 }
 
 .grid-container {
@@ -115,24 +146,32 @@ input#Tamount, input#Total {
   display: grid;
   -ms-grid-columns: 150px 150px;
       grid-template-columns: 150px 150px;
-  grid-gap: 10px;
+  grid-gap: 16px;
 }
 
 header .logo {
-  margin: 50px 0px 30px 130px;
+  margin: 30px 0px 30px;
   width: 100px;
 }
 
 .sub-main {
+  margin: auto;
+  width: 350px;
   background: #ffff;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.sub-main1 {
   padding: 20px;
   border-radius: 20px;
 }
 
-.subb_main {
-  margin-top: 20px;
+.sub-main2 {
   background: #00494d;
-  padding: 20px;
+  padding: px;
   border-radius: 20px;
+  max-width: 325px;
+  margin: 20px 0px 20px 10px;
 }
 /*# sourceMappingURL=styles.css.map */

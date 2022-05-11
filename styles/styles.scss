@@ -9,25 +9,16 @@ $input-color: rgb(243, 249, 250);
 $label-color:rgb(94, 122, 125);
 
 
-
 *{
   font-family:$primary-font;
 }
-
-
 
 body {
     background: $primary-color;
   }
 
-main{
-  display:flex;
-  justify-content:center;
-  
-}
-
 .primary-btn {
-  width:145px;
+  width:146px;
   height: 45px;
   background:$secondary-color;
   border-color: $secondary-color;
@@ -52,17 +43,28 @@ main{
   color:$secondary-color;
 }
 
+header{
+ display:flex;
+ justify-content:center;
+
+}
+
 .btn7{
-  margin-top:20px;
+ 
+  margin:20px auto;
   background:$text-cyan;
-  border-color:$text-cyan;
   color: $secondary-color;
-  width:310px;
+  width:280px;
   height:50px;
   font-size:24px;
   border-radius: 10px;
   font-weight:600;
   border-style:none;
+  
+}
+
+.reset{
+   text-align: center;
 }
 
 input[type="text"] {
@@ -83,30 +85,45 @@ input[type="text"] {
   
 }
 
-
-
- 
-  
-
-
-
-
 input{
   
     &#Tamount,&#Total{
     background:$secondary-color;
-    
-    
+       
   }
   
 }
 
+input[id="Total"] {
+  width:280px;
+  height: 45px;
+  margin-top: 10px;
+  background:$input-color;
+  border-color:$input-color;
+  border-radius: 5px;
+  border-style:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 .input-label {
   color: $label-color;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 600;  
+}
+
+.label {
+  margin-top:20px;
   
+}
+
+.label2,.label1 {
+  margin-left:35px; 
+}
+.label1 {
+  padding-top:40px;
 }
 
 
@@ -115,42 +132,47 @@ input{
   font-size: 20px;
   font-weight: 600;
   background:$secondary-color;
-  
+  text-align: left; 
 }
 
-
-.label {
-  margin-top:10px;
-}
 
 .grid-container {
   padding-top:10px;
   display:grid;
   grid-template-columns: 150px 150px;
-  grid-gap:10px;
+  grid-gap:16px;
 
 }
  
 header {
     .logo {
-      margin:50px 0px 30px 130px;
+      margin: 30px 0px 30px;
       width:100px;
       
     }
 }
 
 .sub-main{
-
+  margin:auto;
+  width:350px;
   background:#ffff;
+  border-radius:20px;
+  padding:10px;
+  
+}
+
+.sub-main1{
   padding:20px;
   border-radius:20px;
+
 
 }
 
-.subb_main{
-  margin-top:20px;
-  background:$secondary-color;
-  padding:20px;
-  border-radius:20px;
+.sub-main2{
 
+  background:$secondary-color;
+  padding:px;
+  border-radius:20px;
+  max-width: 325px;
+  margin:20px 0px 20px 10px;
 }
