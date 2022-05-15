@@ -75,7 +75,13 @@ input[type="text"] {
   border-color:$input-color;
   border-radius: 5px;
   border-style:none;
-
+  text-align: right;
+  color:$secondary-color;
+  font-size:15px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size:40px;
+  
   &::placeholder {
     color:$text-cyan;
     font-size:15px;
@@ -83,6 +89,20 @@ input[type="text"] {
     
   }
   
+  
+}
+
+input[type=text]:focus {
+  border-style:   #ffffff;
+}
+
+
+.fa{
+  position:relative;
+  left: 20px;
+  top:-35px;
+  color:$label-color;
+  font-size:20px;
 }
 
 input{
@@ -105,6 +125,7 @@ input[id="Total"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
 
 }
 
@@ -164,15 +185,11 @@ header {
 .sub-main1{
   padding:20px;
   border-radius:20px;
-
-
 }
 
 .sub-main2{
-
   background:$secondary-color;
-  padding:px;
   border-radius:20px;
   max-width: 325px;
-  margin:20px 0px 20px 10px;
+  margin:0px 0px 20px 10px;
 }

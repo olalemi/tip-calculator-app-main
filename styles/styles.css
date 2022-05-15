@@ -65,6 +65,12 @@ input[type="text"] {
   border-color: #f3f9fa;
   border-radius: 5px;
   border-style: none;
+  text-align: right;
+  color: #00494d;
+  font-size: 15px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 input[type="text"]::-webkit-input-placeholder {
@@ -91,6 +97,18 @@ input[type="text"]::placeholder {
   font-weight: 600;
 }
 
+input[type=text]:focus {
+  border-style: #ffffff;
+}
+
+.fa {
+  position: relative;
+  left: 20px;
+  top: -35px;
+  color: #5e7a7d;
+  font-size: 20px;
+}
+
 input#Tamount, input#Total {
   background: #00494d;
 }
@@ -112,6 +130,7 @@ input[id="Total"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: left;
 }
 
 .input-label {
@@ -169,9 +188,8 @@ header .logo {
 
 .sub-main2 {
   background: #00494d;
-  padding: px;
   border-radius: 20px;
   max-width: 325px;
-  margin: 20px 0px 20px 10px;
+  margin: 0px 0px 20px 10px;
 }
 /*# sourceMappingURL=styles.css.map */
