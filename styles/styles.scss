@@ -80,20 +80,11 @@ input[type="text"] {
   font-size:15px;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
-  font-size:40px;
-  
-  &::placeholder {
-    color:$text-cyan;
-    font-size:15px;
-    font-weight: 600;
-    
-  }
-  
-  
+  font-size:30px;  
 }
 
-input[type=text]:focus {
-  border-style:   #ffffff;
+input[type="text"]:focus {
+  outline-color: #26c0ab;
 }
 
 
@@ -119,13 +110,23 @@ input[id="Total"] {
   height: 45px;
   margin-top: 10px;
   background:$input-color;
-  border-color:$input-color;
+  border-color:none;
   border-radius: 5px;
   border-style:none;
+  color:$text-cyan;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: right;
+  outline: none;
+
+  &::placeholder {
   text-align: left;
+  color:$text-cyan;
+  font-size:15px;
+  font-weight: 600;
+     
+  }
 
 }
 

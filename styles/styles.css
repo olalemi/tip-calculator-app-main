@@ -70,35 +70,11 @@ input[type="text"] {
   font-size: 15px;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
 }
 
-input[type="text"]::-webkit-input-placeholder {
-  color: #26c0ab;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-input[type="text"]:-ms-input-placeholder {
-  color: #26c0ab;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-input[type="text"]::-ms-input-placeholder {
-  color: #26c0ab;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-input[type="text"]::placeholder {
-  color: #26c0ab;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-input[type=text]:focus {
-  border-style: #ffffff;
+input[type="text"]:focus {
+  outline-color: #26c0ab;
 }
 
 .fa {
@@ -118,9 +94,10 @@ input[id="Total"] {
   height: 45px;
   margin-top: 10px;
   background: #f3f9fa;
-  border-color: #f3f9fa;
+  border-color: none;
   border-radius: 5px;
   border-style: none;
+  color: #26c0ab;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,7 +107,36 @@ input[id="Total"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: right;
+  outline: none;
+}
+
+input[id="Total"]::-webkit-input-placeholder {
   text-align: left;
+  color: #26c0ab;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+input[id="Total"]:-ms-input-placeholder {
+  text-align: left;
+  color: #26c0ab;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+input[id="Total"]::-ms-input-placeholder {
+  text-align: left;
+  color: #26c0ab;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+input[id="Total"]::placeholder {
+  text-align: left;
+  color: #26c0ab;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .input-label {
