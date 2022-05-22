@@ -99,36 +99,42 @@ input[type="text"]:focus {
 input{
   
     &#Tamount,&#Total{
-    background:$secondary-color;
-       
-  }
-  
+    background:$secondary-color;     
+  }  
 }
 
 input[id="Total"] {
-  width:280px;
-  height: 45px;
-  margin-top: 10px;
-  background:$input-color;
+  width:120px;
+  height: 40px;
+  background:#ffffff;
   border-color:none;
   border-radius: 5px;
-  border-style:none;
+  // border-style:none;
   color:$text-cyan;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: right;
   outline: none;
-
-  &::placeholder {
-  text-align: left;
-  color:$text-cyan;
   font-size:15px;
-  font-weight: 600;
-     
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size:30px;
+}
+
+ .flexbox-label{
+  padding-top: 20px;
+  display:flex;
+  justify-content:space-between;
+}
+
+
+.input-label3 {
+  color:$label-color;
+  font-size:15px;
+  font-weight: 600;    
   }
 
-}
 
 .input-label {
   color: $label-color;
@@ -137,26 +143,32 @@ input[id="Total"] {
 }
 
 .label {
-  margin-top:20px;
-  
+  margin-top:20px;  
 }
 
-.label2,.label1 {
-  margin-left:35px; 
-}
 .label1 {
-  padding-top:40px;
+  margin-left:10px; 
+  padding:20px;
 }
 
+.label2 {
+  padding:20px;
+  margin-top:8px;
+}
 
 .input-label2 {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 14px;
+  font-stretch: 40;
   font-weight: 600;
   background:$secondary-color;
   text-align: left; 
+  letter-spacing: 0.9px;
 }
-
+.box2{
+  margin-top:-40px;
+  margin-bottom:-10px ;
+}
 
 .grid-container {
   padding-top:10px;

@@ -90,13 +90,11 @@ input#Tamount, input#Total {
 }
 
 input[id="Total"] {
-  width: 280px;
-  height: 45px;
-  margin-top: 10px;
-  background: #f3f9fa;
+  width: 120px;
+  height: 40px;
+  background: #ffffff;
   border-color: none;
   border-radius: 5px;
-  border-style: none;
   color: #26c0ab;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,32 +107,24 @@ input[id="Total"] {
           justify-content: center;
   text-align: right;
   outline: none;
-}
-
-input[id="Total"]::-webkit-input-placeholder {
-  text-align: left;
-  color: #26c0ab;
   font-size: 15px;
-  font-weight: 600;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 30px;
 }
 
-input[id="Total"]:-ms-input-placeholder {
-  text-align: left;
-  color: #26c0ab;
-  font-size: 15px;
-  font-weight: 600;
+.flexbox-label {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-input[id="Total"]::-ms-input-placeholder {
-  text-align: left;
-  color: #26c0ab;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-input[id="Total"]::placeholder {
-  text-align: left;
-  color: #26c0ab;
+.input-label3 {
+  color: #5e7a7d;
   font-size: 15px;
   font-weight: 600;
 }
@@ -149,20 +139,29 @@ input[id="Total"]::placeholder {
   margin-top: 20px;
 }
 
-.label2, .label1 {
-  margin-left: 35px;
+.label1 {
+  margin-left: 10px;
+  padding: 20px;
 }
 
-.label1 {
-  padding-top: 40px;
+.label2 {
+  padding: 20px;
+  margin-top: 8px;
 }
 
 .input-label2 {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 14px;
+  font-stretch: 40;
   font-weight: 600;
   background: #00494d;
   text-align: left;
+  letter-spacing: 0.9px;
+}
+
+.box2 {
+  margin-top: -40px;
+  margin-bottom: -10px;
 }
 
 .grid-container {
