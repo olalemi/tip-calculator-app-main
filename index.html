@@ -1,94 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-  <title>Frontend Mentor | Tip calculator app</title>
-  <script src="script.js" defer></script>
-
-</head>
-<body>
-
-
-  <header>
-    <img class="logo" src="images/logo.svg" alt="Girl in a jacket" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="Girl in a jacket" />
     </header>
-  
-        <div class="sub-main" >  
 
-                  <form>
-
+    <div class="sub-main">
+      <form>
         <div class="sub-main1">
-
-          
           <div class="label">
-           
-              <label  for="Bill" class="input-label " for="Bill">Bill</label><br>
-              
-              <input type="text" name="Bill" id="Bill">
-              
-              
+            <label for="Bill" class="input-label" for="Bill">Bill</label><br />
+
+            <input type="text" name="Bill" id="Bill" />
           </div>
           <i class="fa solid fa-naira-sign"></i>
-              
-                  <div class="grid-container"> 
-                    <label class= "input-label"> Select Tip %</label><br>
-                      <button class="primary-btn btn1">5%</button>
-                      <button class="primary-btn btn2">10%</button>
-                      <button class="primary-btn btn3">15%</button>
-                      <button class="primary-btn btn4">25%</button>
-                      <button class="primary-btn btn5">50%</button>
-                      <button class="primary-btn btn6">Custom</button>
-                  </div>
 
-                
-                <div class="label">
-                  <label for="Npeople"  class="input-label" >Number of People</label><br>
-                  <input type="text" name="Npeople" id="Npeople" min="1">
-                </div>
-                <i class="fa fa-user icon"></i>
+          <div class="grid-container">
+            <label class="input-label"> Select Tip %</label><br />
+            <button class="primary-btn btn1">5%</button>
+            <button class="primary-btn btn2">10%</button>
+            <button class="primary-btn btn3">15%</button>
+            <button class="primary-btn btn4">25%</button>
+            <button class="primary-btn btn5">50%</button>
+            <button class="primary-btn btn6">Custom</button>
+          </div>
+
+          <div class="label">
+            <label for="Npeople" class="input-label">Number of People</label
+            ><br />
+            <input type="text" name="Npeople" id="Npeople" min="1" />
+          </div>
+          <i class="fa fa-user icon"></i>
         </div>
 
-      
-    <div class="sub-main2">
-              <div class="flexbox-label box1">
-                  <div class="label1">
-                    <label for="Tamount" class="input-label2 "> Tip Amount</label><br>
-                    <label for="Tamount" class="input-label3 ">/ person</label><br>
-                  </div>
-                  <div class=" label2" >
-                    <input  name="Tamount" id="Total" readonly>
-                  </div>
-                  
-              </div>
-              
+        <div class="sub-main2">
+          <div class="flexbox-label box1">
+            <div class="label1">
+              <label for="Tamount" class="input-label2"> Tip Amount</label
+              ><br />
+              <label for="Tamount" class="input-label3">/ person</label><br />
+            </div>
+            <div class="label2">
+              <input name="Tamount" id="Total" readonly />
+            </div>
+          </div>
 
-              <div class="flexbox-label box2 ">
-                  <div class=" label1">
-                    <label for="Total" class="input-label2 " >Total</label><br>
-                    <label for="Tamount" class="input-label3 ">/ person</label><br>
-                  </div>
-                  <div class=" label2">
-                    <input name="Total" id="Total" readonly>
-                 </div>
-                  
-              </div>
+          <div class="flexbox-label box2">
+            <div class="label1">
+              <label for="Total" class="input-label2">Total</label><br />
+              <label for="Tamount" class="input-label3">/ person</label><br />
+            </div>
+            <div class="label2">
+              <input name="Total" id="Total" readonly />
+            </div>
+          </div>
 
-              <div class="reset" >
-                <button class="btn7"  type="reset">RESET</button>
-              </div>
-
-      </div>
-
-                                                          
+          <div class="reset">
+            <button class="btn7" type="reset">RESET</button>
+          </div>
+        </div>
       </form>
+    </div>
 
-
-  </div>
-
-
-       
-</body>
+    <script src="script.js"></script>
+  </body>
+</html>
