@@ -3,6 +3,12 @@
   font-family: Space Mono, monospace;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   background: #c5e4e7;
 }
@@ -13,13 +19,12 @@ body {
   background: #00494d;
   border-color: #00494d;
   border-radius: 5px;
-  color: #ffff;
+  color: white;
   font-size: 24px;
   font-weight: 600;
   border-style: none;
   cursor: pointer;
 }
-
 .primary-btn:hover {
   background: #26c0ab;
   border-color: #26c0ab;
@@ -27,19 +32,27 @@ body {
   border-style: none;
 }
 
-.btn6:hover {
-  background: #f3f9fa;
-  border-color: #f3f9fa;
+.btn6 {
+  width: 146px;
+  height: 45px;
+  background: rgb(243, 249, 250);
+  border-radius: 5px;
   color: #00494d;
+  font-size: 24px;
+  font-weight: 600;
+  border: '3px solid';
+  border-color: #ff0000;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  visibility: hidden;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .btn7 {
@@ -59,23 +72,23 @@ header {
   text-align: center;
 }
 
-input[type="text"] {
+input[type=text] {
   width: 310px;
   height: 45px;
   margin-top: 10px;
-  background: #f3f9fa;
-  border-color: #f3f9fa;
+  background: rgb(243, 249, 250);
+  border-color: rgb(243, 249, 250);
   border-radius: 5px;
   border-style: none;
   text-align: right;
   color: #00494d;
   font-size: 15px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 30px;
 }
 
-input[type="text"]:focus {
+input[type=text]:focus {
   outline-color: #26c0ab;
 }
 
@@ -83,7 +96,7 @@ input[type="text"]:focus {
   position: relative;
   left: 20px;
   top: -35px;
-  color: #5e7a7d;
+  color: rgb(94, 122, 125);
   font-size: 20px;
 }
 
@@ -91,48 +104,38 @@ input#Tamount, input#Total {
   background: #00494d;
 }
 
-input[id="Total"] {
+input[type=number] {
   width: 120px;
   height: 40px;
   background: #ffffff;
   border-color: none;
   border-radius: 5px;
   color: #26c0ab;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: right;
   outline: none;
   font-size: 15px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 30px;
 }
 
 .flexbox-label {
   padding-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .input-label3 {
-  color: #5e7a7d;
+  color: rgb(94, 122, 125);
   font-size: 15px;
   font-weight: 600;
 }
 
 .input-label {
-  color: #5e7a7d;
+  color: rgb(94, 122, 125);
   font-size: 20px;
   font-weight: 600;
 }
@@ -168,10 +171,8 @@ input[id="Total"] {
 
 .grid-container {
   padding-top: 10px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px 150px;
-      grid-template-columns: 150px 150px;
+  grid-template-columns: 150px 150px;
   grid-gap: 16px;
 }
 
@@ -183,7 +184,7 @@ header .logo {
 .sub-main {
   margin: auto;
   width: 350px;
-  background: #ffff;
+  background: white;
   border-radius: 20px;
   padding: 10px;
 }
@@ -198,5 +199,9 @@ header .logo {
   border-radius: 20px;
   max-width: 325px;
   margin: 0px 0px 20px 10px;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
+
+
+
+
+

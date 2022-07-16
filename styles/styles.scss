@@ -1,161 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-$primary-font:Space Mono,monospace;
-$primary-color:#c5e4e7;
+$primary-font: Space Mono, monospace;
+$primary-color: #c5e4e7;
 $secondary-color: #00494d;
 $text-cyan: #26c0ab;
-$primaryBtn: blue ;
+$primaryBtn: blue;
 $input-color: rgb(243, 249, 250);
-$label-color:rgb(94, 122, 125);
+$label-color: rgb(94, 122, 125);
 
-
-*{
-  font-family:$primary-font;
+* {
+  font-family: $primary-font;
 }
 
 body {
-    background: $primary-color;
-  }
+  background: $primary-color;
+}
 
-.primary-btn {
-  width:146px;
+.primary-btn{
+  width: 146px;
   height: 45px;
-  background:$secondary-color;
+  background: $secondary-color;
   border-color: $secondary-color;
-  border-radius:5px;
-  color:#ffff;
-  font-size:24px;
-  font-weight:600;
-  border-style:none;
+  border-radius: 5px;
+  color: #ffff;
+  font-size: 24px;
+  font-weight: 600;
+  border-style: none;
   cursor: pointer;
 
-   &:hover{
-     background:$text-cyan;
-     border-color:$text-cyan;
-     color:$secondary-color;
-     border-style:none;
-   }
-
+  &:hover {
+    background: $text-cyan;
+    border-color: $text-cyan;
+    color: $secondary-color;
+    border-style: none;
+  }
 }
 
-.btn6:hover{
-  background:$input-color;
-  border-color:$input-color;
-  color:$secondary-color;
-}
-
-header{
- display:flex;
- justify-content:center;
-
-}
-
-.btn7{
- 
-  margin:20px auto;
-  background:$text-cyan;
+.btn6 {
+  width: 146px;
+  height: 45px;
+  background: $input-color;
+  border-color: $input-color;
+  border-radius: 5px;
   color: $secondary-color;
-  width:280px;
-  height:50px;
-  font-size:24px;
+  font-size: 24px;
+  font-weight: 600;
+  border-style: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.btn7 {
+  margin: 20px auto;
+  background: $text-cyan;
+  color: $secondary-color;
+  width: 280px;
+  height: 50px;
+  font-size: 24px;
   border-radius: 10px;
-  font-weight:600;
-  border-style:none;
-  cursor:pointer;
-  
+  font-weight: 600;
+  border-style: none;
+  cursor: pointer;
 }
 
-.reset{
-   text-align: center;
+.reset {
+  text-align: center;
 }
 
-input[type="text"] {
-  width:310px;
+input[type='text'] {
+  width: 310px;
   height: 45px;
   margin-top: 10px;
-  background:$input-color;
-  border-color:$input-color;
+  background: $input-color;
+  border-color: $input-color;
   border-radius: 5px;
-  border-style:none;
+  border-style: none;
   text-align: right;
-  color:$secondary-color;
-  font-size:15px;
+  color: $secondary-color;
+  font-size: 15px;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
-  font-size:30px;  
+  font-size: 30px;
 }
 
-input[type="text"]:focus {
+input[type='text']:focus {
   outline-color: #26c0ab;
 }
 
-
-.fa{
-  position:relative;
+.fa {
+  position: relative;
   left: 20px;
-  top:-35px;
-  color:$label-color;
-  font-size:20px;
+  top: -35px;
+  color: $label-color;
+  font-size: 20px;
 }
 
-input{
-  
-    &#Tamount,&#Total{
-    background:$secondary-color;     
-  }  
+input {
+  &#Tamount,
+  &#Total {
+    background: $secondary-color;
+  }
 }
 
-input[id="Total"] {
-  width:120px;
+input[type='number'] {
+  width: 120px;
   height: 40px;
-  background:#ffffff;
-  border-color:none;
+  background: #ffffff;
+  border-color: none;
   border-radius: 5px;
   // border-style:none;
-  color:$text-cyan;
+  color: $text-cyan;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: right;
   outline: none;
-  font-size:15px;
+  font-size: 15px;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
-  font-size:30px;
+  font-size: 30px;
 }
 
- .flexbox-label{
+.flexbox-label {
   padding-top: 20px;
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 
 .input-label3 {
-  color:$label-color;
-  font-size:15px;
-  font-weight: 600;    
-  }
-
+  color: $label-color;
+  font-size: 15px;
+  font-weight: 600;
+}
 
 .input-label {
   color: $label-color;
   font-size: 20px;
-  font-weight: 600;  
+  font-weight: 600;
 }
 
 .label {
-  margin-top:20px;  
+  margin-top: 20px;
 }
 
 .label1 {
-  margin-left:10px; 
-  padding:20px;
+  margin-left: 10px;
+  padding: 20px;
 }
 
 .label2 {
-  padding:20px;
-  margin-top:8px;
+  padding: 20px;
+  margin-top: 8px;
 }
 
 .input-label2 {
@@ -163,48 +162,45 @@ input[id="Total"] {
   font-size: 14px;
   font-stretch: 40;
   font-weight: 600;
-  background:$secondary-color;
-  text-align: left; 
+  background: $secondary-color;
+  text-align: left;
   letter-spacing: 0.9px;
 }
-.box2{
-  margin-top:-40px;
-  margin-bottom:-10px ;
+.box2 {
+  margin-top: -40px;
+  margin-bottom: -10px;
 }
 
 .grid-container {
-  padding-top:10px;
-  display:grid;
+  padding-top: 10px;
+  display: grid;
   grid-template-columns: 150px 150px;
-  grid-gap:16px;
-
+  grid-gap: 16px;
 }
- 
+
 header {
-    .logo {
-      margin: 30px 0px 30px;
-      width:100px;
-      
-    }
+  .logo {
+    margin: 30px 0px 30px;
+    width: 100px;
+  }
 }
 
-.sub-main{
-  margin:auto;
-  width:350px;
-  background:#ffff;
-  border-radius:20px;
-  padding:10px;
-  
+.sub-main {
+  margin: auto;
+  width: 350px;
+  background: #ffff;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-.sub-main1{
-  padding:20px;
-  border-radius:20px;
+.sub-main1 {
+  padding: 20px;
+  border-radius: 20px;
 }
 
-.sub-main2{
-  background:$secondary-color;
-  border-radius:20px;
+.sub-main2 {
+  background: $secondary-color;
+  border-radius: 20px;
   max-width: 325px;
-  margin:0px 0px 20px 10px;
+  margin: 0px 0px 20px 10px;
 }
