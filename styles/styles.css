@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
-* {
-  font-family: Space Mono, monospace;
-}
-
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+* {
+  font-family: Space Mono, monospace;
 }
 
 body {
@@ -32,24 +33,6 @@ body {
   border-style: none;
 }
 
-.btn6 {
-  width: 146px;
-  height: 45px;
-  background: rgb(243, 249, 250);
-  border-radius: 5px;
-  color: #00494d;
-  font-size: 24px;
-  font-weight: 600;
-  border: '3px solid';
-  border-color: #ff0000;
-  cursor: pointer;
-}
-
-.error {
-  color: red;
-  visibility: hidden;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -72,10 +55,9 @@ header {
   text-align: center;
 }
 
-input[type=text] {
+input[type=number] {
   width: 310px;
   height: 45px;
-  margin-top: 10px;
   background: rgb(243, 249, 250);
   border-color: rgb(243, 249, 250);
   border-radius: 5px;
@@ -86,10 +68,41 @@ input[type=text] {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 30px;
+  margin-top: 10px;
 }
 
-input[type=text]:focus {
+input[type=number]:focus {
   outline-color: #26c0ab;
+}
+
+input[type=text] {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  color: #26c0ab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+input[id=Custom] {
+  width: 146px;
+  height: 45px;
+  background: rgb(243, 249, 250);
+  border-color: rgb(243, 249, 250);
+  border-radius: 5px;
+  color: #00494d;
+  font-size: 24px;
+  font-weight: 600;
+  border-style: none;
+  text-align: center;
+  margin-top: 0px;
 }
 
 .fa {
@@ -102,24 +115,6 @@ input[type=text]:focus {
 
 input#Tamount, input#Total {
   background: #00494d;
-}
-
-input[type=number] {
-  width: 120px;
-  height: 40px;
-  background: #ffffff;
-  border-color: none;
-  border-radius: 5px;
-  color: #26c0ab;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: right;
-  outline: none;
-  font-size: 15px;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-size: 30px;
 }
 
 .flexbox-label {
@@ -198,10 +193,11 @@ header .logo {
   background: #00494d;
   border-radius: 20px;
   max-width: 325px;
-  margin: 0px 0px 20px 10px;
+  margin: -60px 0px 20px 10px;
+}
+
+.error {
+  color: Red;
+  visibility: hidden;
+  margin-bottom: 55px;
 }/*# sourceMappingURL=styles.css.map */
-
-
-
-
-
