@@ -200,4 +200,9 @@ header .logo {
   color: Red;
   visibility: hidden;
   margin-bottom: 55px;
+}
+
+.error {
+  color: Red;
+  visibility: hidden;
 }/*# sourceMappingURL=styles.css.map */
