@@ -20,12 +20,13 @@ body {
   background: #00494d;
   border-color: #00494d;
   border-radius: 5px;
-  color: white;
+  color: #ffff;
   font-size: 24px;
   font-weight: 600;
   border-style: none;
   cursor: pointer;
 }
+
 .primary-btn:hover {
   background: #26c0ab;
   border-color: #26c0ab;
@@ -33,9 +34,20 @@ body {
   border-style: none;
 }
 
+button:focus {
+  background: #26c0ab;
+  border-color: #26c0ab;
+  color: #00494d;
+  border-style: none;
+}
+
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn7 {
@@ -56,16 +68,17 @@ header {
 }
 
 input[type=number] {
-  width: 310px;
+  width: 90%;
   height: 45px;
-  background: rgb(243, 249, 250);
-  border-color: rgb(243, 249, 250);
+  padding: 5px 15px 5px;
+  background: #f3f9fa;
+  border-color: #f3f9fa;
   border-radius: 5px;
   border-style: none;
   text-align: right;
   color: #00494d;
   font-size: 15px;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
   font-size: 30px;
   margin-top: 10px;
@@ -75,41 +88,49 @@ input[type=number]:focus {
   outline-color: #26c0ab;
 }
 
-input[type=text] {
-  width: 120px;
+input[type='text'] {
+  width: 106px;
   height: 40px;
   border-radius: 5px;
   color: #26c0ab;
+  padding: 5px 15px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: right;
   outline: none;
   font-size: 15px;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 input[id=Custom] {
-  width: 146px;
-  height: 45px;
-  background: rgb(243, 249, 250);
-  border-color: rgb(243, 249, 250);
+  width: 113px;
+  height: 35px;
+  background: #f3f9fa;
+  border-color: #f3f9fa;
   border-radius: 5px;
   color: #00494d;
   font-size: 24px;
   font-weight: 600;
   border-style: none;
-  text-align: center;
+  text-align: right;
   margin-top: 0px;
+  padding: 0 0.9;
 }
 
 .fa {
   position: relative;
   left: 20px;
   top: -35px;
-  color: rgb(94, 122, 125);
+  color: #5e7a7d;
   font-size: 20px;
 }
 
@@ -119,18 +140,22 @@ input#Tamount, input#Total {
 
 .flexbox-label {
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .input-label3 {
-  color: rgb(94, 122, 125);
+  color: #5e7a7d;
   font-size: 15px;
   font-weight: 600;
 }
 
 .input-label {
-  color: rgb(94, 122, 125);
+  color: #5e7a7d;
   font-size: 20px;
   font-weight: 600;
 }
@@ -166,8 +191,10 @@ input#Tamount, input#Total {
 
 .grid-container {
   padding-top: 10px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 150px 150px;
+  -ms-grid-columns: 150px 150px;
+      grid-template-columns: 150px 150px;
   grid-gap: 16px;
 }
 
@@ -179,7 +206,7 @@ header .logo {
 .sub-main {
   margin: auto;
   width: 350px;
-  background: white;
+  background: #ffff;
   border-radius: 20px;
   padding: 10px;
 }
@@ -205,4 +232,5 @@ header .logo {
 .error {
   color: Red;
   visibility: hidden;
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */

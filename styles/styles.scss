@@ -36,13 +36,21 @@ body {
   font-weight: 600;
   border-style: none;
   cursor: pointer;
-
   &:hover {
     background: $text-cyan;
     border-color: $text-cyan;
     color: $secondary-color;
     border-style: none;
-  }
+}
+
+}
+
+button:focus{
+  background: $text-cyan;
+    border-color: $text-cyan;
+    color: $secondary-color;
+    border-style: none;
+
 }
 
 header {
@@ -68,8 +76,9 @@ header {
 }
 
 input[type=number] {
-  width: 310px;
+  width: 90%;
   height: 45px;
+  padding: 5px 15px 5px;
   background: $input-color;
   border-color: $input-color;
   border-radius: 5px;
@@ -81,6 +90,7 @@ input[type=number] {
   font-weight: 700;
   font-size: 30px;
   margin-top: 10px;
+ 
 }
 
 input[type=number]:focus {
@@ -88,11 +98,12 @@ input[type=number]:focus {
 }
 
 input[type='text'] {
-  width: 120px;
+  width: 106px;
   height: 40px;
   border-radius: 5px;
   color: $text-cyan;
-   display: flex;
+  padding: 5px 15px 5px;
+  display: flex;
   align-items: center;
    justify-content: center;
   text-align: right;
@@ -100,12 +111,12 @@ input[type='text'] {
   font-size: 15px;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 input[id=Custom]{
-  width: 146px;
-  height: 45px;
+  width: 113px;
+  height: 35px;
   background: $input-color;
   border-color: $input-color;
   border-radius: 5px;
@@ -113,8 +124,9 @@ input[id=Custom]{
   font-size: 24px;
   font-weight: 600;
   border-style: none;
-  text-align: center;
+  text-align: right;
   margin-top:0px;
+  padding: 0 0.9;
   
 }
 
